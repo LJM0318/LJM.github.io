@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김민수 | 소프트웨어 개발자</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 마우스 따라다니는 그라디언트 -->
+    <div class="mouse-gradient" id="mouseGradient"></div>
+    
+    <div class="container">
+        <!-- 왼쪽 고정 헤더 -->
+        <header class="header">
+            <div class="header-content">
+                <div class="intro">
+                    <div class="profile-image-wrapper">
+                        <div class="profile-image-glow"></div>
+                        <img src="P.png" alt="김민수 프로필" class="profile-image">
+                        <div class="profile-status">
+                            <span class="status-dot"></span>
+                            <span class="status-text">구직 중</span>
+                        </div>
+                    </div>
+                    <h1 class="name">김민수</h1>
+                    <h2 class="title">소프트웨어 개발자</h2>
+                    <p class="tagline">사용자에게 가치 있는 서비스를 제공하는<br>풀스택 개발자입니다.</p>
+                </div>
+                
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#about" class="nav-link active">
+                            <span class="nav-indicator"></span>
+                            <span class="nav-text">소개</span>
+                        </a></li>
+                        <li><a href="#experience" class="nav-link">
+                            <span class="nav-indicator"></span>
+                            <span class="nav-text">경험</span>
+                        </a></li>
+                        <li><a href="#strengths" class="nav-link">
+                            <span class="nav-indicator"></span>
+                            <span class="nav-text">강점</span>
+                        </a></li>
+                        <li><a href="#goals" class="nav-link">
+                            <span class="nav-indicator"></span>
+                            <span class="nav-text">포부</span>
+                        </a></li>
+                    </ul>
+                </nav>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </header>
+        
+        <!-- 오른쪽 스크롤 콘텐츠 -->
+        <main class="main">
+            <!-- About 섹션 -->
+            <section id="about" class="section">
+                <div class="section-header-mobile">
+                    <h2>소개</h2>
+                </div>
+                <div class="about-content">
+                    <p>
+                        안녕하세요. 저는 <span class="highlight">사용자 경험을 최우선</span>으로 생각하는 
+                        소프트웨어 개발자입니다. 대학에서 컴퓨터공학을 전공하며 프로그래밍의 기초를 
+                        탄탄히 다졌고, 졸업 후 <span class="highlight">스타트업에서 2년간</span> 
+                        웹 개발 업무를 담당했습니다.
+                    </p>
+                    <p>
+                        빠르게 변화하는 IT 업계에서 새로운 기술을 학습하고 적용하는 것에 큰 흥미를 
+                        느끼며, 특히 <span class="highlight">사용자 경험을 개선하는 기술적 솔루션</span>을 
+                        찾는 것을 좋아합니다.
+                    </p>
+                    <p>
+                        저의 생활신조는 <span class="highlight">"기술은 사람을 위해 존재한다"</span>입니다. 
+                        아무리 기술적으로 뛰어난 코드라도 실제 사용자에게 도움이 되지 않는다면 
+                        의미가 없다고 생각합니다. 사용자가 더 편리하고 효율적으로 업무를 처리할 수 
+                        있도록 돕는 것이 개발자의 사명이라고 믿습니다.
+                    </p>
+                </div>
+            </section>
+            
+            <!-- Experience 섹션 -->
+            <section id="experience" class="section">
+                <div class="section-header-mobile">
+                    <h2>경험</h2>
+                </div>
+                
+                <div class="experience-list">
+                    <!-- 경험 1 -->
+                    <a href="#" class="experience-card">
+                        <div class="experience-date">
+                            2022 — 현재
+                        </div>
+                        <div class="experience-content">
+                            <h3 class="experience-title">
+                                웹 개발자 · 스타트업
+                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                                </svg>
+                            </h3>
+                            <p class="experience-description">
+                                빠르게 성장하는 스타트업에서 프론트엔드와 백엔드 개발을 담당. 
+                                사용자 피드백을 기반으로 UI/UX 개선 작업을 진행하고, 
+                                REST API 설계 및 구현을 담당했습니다.
+                            </p>
+                            <ul class="tech-tags">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>TypeScript</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </div>
+                    </a>
+                    
+                    <!-- 경험 2 -->
+                    <a href="#" class="experience-card">
+                        <div class="experience-date">
+                            대학 3학년
+                        </div>
+                        <div class="experience-content">
+                            <h3 class="experience-title">
+                                팀장 · 교내 해커톤 🏆 우수상
+                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                                </svg>
+                            </h3>
+                            <p class="experience-description">
+                                "지역 상권 활성화 앱"을 개발하여 우수상 수상. 5명의 팀원과 함께 
+                                48시간 동안 React Native로 모바일 앱을 완성. 백엔드 API 설계부터 
+                                프론트엔드 구현까지 풀스택 개발 경험을 쌓았습니다.
+                            </p>
+                            <ul class="tech-tags">
+                                <li>React Native</li>
+                                <li>API Design</li>
+                                <li>Full-Stack</li>
+                                <li>Leadership</li>
+                            </ul>
+                        </div>
+                    </a>
+                    
+                    <!-- 경험 3 -->
+                    <a href="#" class="experience-card">
+                        <div class="experience-date">
+                            4년간
+                        </div>
+                        <div class="experience-content">
+                            <h3 class="experience-title">
+                                멘토 · 컴퓨터공학과 학회
+                                <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                                </svg>
+                            </h3>
+                            <p class="experience-description">
+                                후배들에게 프로그래밍을 가르치는 멘토링 진행. 복잡한 개념을 쉽게 
+                                설명하는 능력을 길렀으며, 현재 팀 내에서 코드 리뷰와 기술 공유를 
+                                할 때 큰 도움이 되고 있습니다.
+                            </p>
+                            <ul class="tech-tags">
+                                <li>Mentoring</li>
+                                <li>Code Review</li>
+                                <li>Teaching</li>
+                                <li>Communication</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                
+                <a href="#" class="resume-link">
+                    전체 이력 보기
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/>
+                    </svg>
+                </a>
+            </section>
+            
+            <!-- Strengths 섹션 -->
+            <section id="strengths" class="section">
+                <div class="section-header-mobile">
+                    <h2>강점</h2>
+                </div>
+                
+                <div class="strengths-list">
+                    <div class="strength-card">
+                        <div class="strength-icon">📚</div>
+                        <div class="strength-content">
+                            <h3>꾸준한 학습 의지</h3>
+                            <p>
+                                새로운 기술 트렌드에 관심이 많아 개인 시간을 활용해 온라인 강의를 
+                                수강하고 사이드 프로젝트를 진행합니다. 배움을 멈추지 않는 것이 
+                                개발자로서 가장 중요한 자질이라 생각합니다.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="strength-card">
+                        <div class="strength-icon">🤝</div>
+                        <div class="strength-content">
+                            <h3>협업과 소통</h3>
+                            <p>
+                                팀 프로젝트에서 다른 개발자, 디자이너, 기획자와 원활히 소통하며 
+                                공동의 목표를 달성하는 것을 중요하게 생각합니다. 기술적 내용을 
+                                비개발자도 이해할 수 있게 설명하는 능력을 갖추고 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="strength-card">
+                        <div class="strength-icon">🔧</div>
+                        <div class="strength-content">
+                            <h3>문제 해결 지향적</h3>
+                            <p>
+                                복잡한 버그나 기술적 이슈에 직면했을 때 포기하지 않고 다양한 
+                                접근 방법을 시도하여 해결책을 찾습니다. 문제의 근본 원인을 
+                                파악하고 체계적으로 해결하는 것을 좋아합니다.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="strength-card improvement">
+                        <div class="strength-icon">🎯</div>
+                        <div class="strength-content">
+                            <h3>개선 중: 완벽주의 성향</h3>
+                            <p>
+                                때로는 코드의 완성도에 지나치게 집착하여 일정에 영향을 줄 수 있습니다. 
+                                이를 개선하기 위해 우선순위를 명확히 하고 적정 수준의 완성도를 
+                                목표로 하는 연습을 하고 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Goals 섹션 -->
+            <section id="goals" class="section">
+                <div class="section-header-mobile">
+                    <h2>포부</h2>
+                </div>
+                
+                <div class="goals-content">
+                    <div class="goal-card">
+                        <span class="goal-badge">단기</span>
+                        <h3>적응 & 성장</h3>
+                        <p>
+                            입사 후에는 먼저 개발 문화와 코딩 컨벤션에 빠르게 적응하여 팀의 
+                            일원으로서 역할을 다하겠습니다. 맡은 업무를 성실히 수행하면서 
+                            비즈니스 도메인에 대한 이해도를 높이고, 기존 팀원들과의 협업을 
+                            통해 개발 실력을 향상시키겠습니다.
+                        </p>
+                    </div>
+                    
+                    <div class="goal-card">
+                        <span class="goal-badge">중장기</span>
+                        <h3>기술 리더</h3>
+                        <p>
+                            기술 리더로 성장하여 주니어 개발자들을 멘토링하고, 새로운 기술 도입과 
+                            개발 프로세스 개선에 기여하고 싶습니다. 특히 <span class="highlight">클라우드 기술</span>과 
+                            <span class="highlight">마이크로서비스 아키텍처</span>에 대한 전문성을 쌓아 
+                            서비스의 확장성과 안정성 향상에 기여하겠습니다.
+                        </p>
+                    </div>
+                    
+                    <div class="goal-card featured">
+                        <span class="goal-badge">궁극적</span>
+                        <h3>혁신의 핵심</h3>
+                        <p>
+                            궁극적으로는 회사와 함께 성장하여 IT 업계에서 인정받는 개발자가 되고, 
+                            사용자에게 진정한 가치를 제공하는 <span class="highlight">혁신적인 서비스 개발</span>에 
+                            핵심적인 역할을 담당하고 싶습니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Footer -->
+            <footer class="footer">
+                <p>
+                    <span class="highlight">Inter</span> 폰트와 <span class="highlight">VS Code</span>로 
+                    정성껏 제작했습니다. <span class="highlight">HTML, CSS, JavaScript</span>만으로 
+                    구현되었습니다.
+                </p>
+            </footer>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
